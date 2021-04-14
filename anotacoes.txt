@@ -1,9 +1,0 @@
-
-Encotrar latitude e Longitude de CEP
-https://app.qualp.com.br/geocoder/get-coords?searchtext=CEP sem separador
-
-
-
-Calcular distancia 
-
-https://osrm.qualp.com.br/route/v1/driving/-46.67881,-23.75818;-46.68052,-23.59018?overview=full&alternatives=false&steps=true
