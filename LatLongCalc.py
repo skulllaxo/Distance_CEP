@@ -2,6 +2,7 @@
 import json
 import requests 
 import pandas as pd
+import os 
 from bs4 import BeautifulSoup as bs
 from DistanceCalc import DistanceCalc as dsc
 
@@ -39,7 +40,8 @@ class LatlongcalcSpider():
 
 
 if __name__ == '__main__':
-    dest_orig = pd.read_csv('/Users/andrebalbinodasilva/Documents/PycharmProjects/calculo_distancia_cep/Destino_Origem.csv')
+    HOME = os.getenv('HOME')
+    dest_orig = pd.read_csv(f'{HOME}/Documents/PycharmProjects/calculo_distancia_cep/Destino_Origem.csv')
     dest_orig['Distancia'] = None
 
     ceps_to = dest_orig['Destino'].to_list()
